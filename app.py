@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 @st.cache_data
 def load_requirement():
     try:
-        requirement = pd.read_csv(r'C:\Users\Olamilekan .A. David\Downloads\Telegram Desktop\datajobs_desc_req.csv', encoding='MacRoman')
+        requirement = pd.read_csv('datajobs_desc_req.csv', encoding='MacRoman')
         return requirement
     except Exception as e:
         st.error(f"Error loading file: {e}")
@@ -16,7 +16,7 @@ def load_requirement():
 @st.cache_data
 def load_title():
     try:
-        title = pd.read_csv(r'C:\Users\Olamilekan .A. David\Downloads\Telegram Desktop\dataset1.csv', encoding='MacRoman') 
+        title = pd.read_csv('dataset1.csv', encoding='MacRoman') 
         return title
     except Exception as e:
         st.error(f"Error loading file: {e}")
