@@ -92,7 +92,7 @@ Did you think I forgot the frequency of terms? Never, na smart man you be, so yo
         st.plotly_chart(fig1)  # Display the bar chart in Streamlit
 
         # Pie Chart for Job Type Proportion
-        fig2 = px.pie(job_type_counts, names=job_type_counts.index, values=job_type_counts.values, title='Job Type Proportion')
+        fig2 = px.pie(job_type_counts, names=job_type_counts.index, values=job_type_counts.values, title='Job Type')
         st.plotly_chart(fig2)  # Display the pie chart in Streamlit
 
         # Word Cloud for Title
